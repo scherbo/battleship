@@ -1,0 +1,59 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  order: 1;
+}
+
+.cell {
+  width: 50px;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+.battleship {
+  height: 100vh;
+}
+
+@media screen and (min-width: 320px) {
+  .battleship {
+    display: block;
+  }
+
+  .grid {
+    max-width: 300px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+
+  .cell {
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .score {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .battleship {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .grid {
+    max-width: 500px;
+    margin: unset;
+  }
+
+  .cell {
+    width: 50px;
+    line-height: 50px;
+  }
+
+  .score {
+    margin-right: 25px;
+  }
+}
